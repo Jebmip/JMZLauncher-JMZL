@@ -1,0 +1,59 @@
+Files Removed - Cleanup Summary
+================================
+
+Removed Folders:
+- launcher_backup_20260217_202122/ (old backup, use create_backup.py instead)
+
+Removed Documentation (redundant/verbose):
+- SUMMARY.md (too detailed, info in other docs)
+- WHATS_NEW.md (too verbose)
+- DOCUMENTATION_INDEX.md (overkill)
+- NEXT_STEPS.md (overlaps with START_HERE.md)
+- QUICK_DIAGNOSTIC.md (overlaps with START_HERE.md)
+
+Removed Test Files (covered by diagnose_elyby.py):
+- test_authlib_command.py
+- test_elyby_endpoint.py
+- fix_authlib_metadata.py
+
+Removed Utilities (not essential):
+- show_minecraft_folder.py (use "Folder" button in GUI)
+
+Remaining Files:
+================
+
+Core Launcher:
+- launcher_gui.py (main GUI)
+- minecraft_launcher.py (game launcher)
+- minecraft_downloader.py (version downloader)
+- launch.bat (Windows shortcut)
+
+Ely.by Authentication:
+- elyby_auth.py (authentication)
+- elyby_login_gui.py (login dialog)
+- authlib_injector.py (authlib-injector manager)
+
+Modpacks:
+- modpacks_gui.py (modpack browser)
+- modrinth_manager.py (Modrinth integration)
+- mod_loader_installer.py (Fabric/Quilt installer)
+
+Diagnostics (3 essential tools):
+- diagnose_elyby.py (comprehensive check)
+- test_java_network.py (Java connectivity test)
+- view_authlib_log.py (log viewer)
+- run_diagnostics.bat (run all at once)
+
+Documentation (streamlined):
+- README.md (main documentation)
+- QUICKSTART.md (setup guide)
+- START_HERE.md (troubleshooting quick start)
+- ELYBY_TROUBLESHOOTING.md (detailed solutions)
+- PROJECT_STATUS.md (project status)
+- SECURITY.md (security features)
+
+Utilities:
+- create_backup.py (backup utility)
+- requirements.txt (dependencies)
+
+Result: Reduced from 30+ files to 22 essential files
